@@ -194,6 +194,7 @@ body {
 
   font-family: Open Sans;
 
+  overflow: hidden;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -265,8 +266,9 @@ body {
   line-height: normal;
 
   background-color: #ec7979;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
 
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -718,10 +720,11 @@ body {
 }
 
 .form__fields__wrap {
-  width: 570px;
+  /* width: 570px; */
+  width: calc((100% - 30px) / 2);
+  /* gap: ; */
 }
 .form__textarea {
-  width: 570px;
   height: 100%;
   resize: none;
 }
